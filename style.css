@@ -1,0 +1,63 @@
+/* Reset basic spacing */
+body, h1, ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  color: #222;
+}
+
+/* --- HEADER IMAGE --- */
+header {
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/* --- LEFT SIDEBAR CONTENT ON HEADER --- */
+header .title-box {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  background: rgba(255, 255, 255, 0.7); /* subtle overlay to keep text readable */
+  padding: 15px 20px;
+  border-radius: 6px;
+  backdrop-filter: blur(4px);
+}
+
+header .title-box h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+header .title-box ul {
+  list-style: none;
+}
+
+header .title-box ul li {
+  margin-bottom: 6px;
+}
+
+header .title-box ul li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+header .title-box ul li a:hover {
+  text-decoration: underline;
+}
+
+/* --- PAGE CONTENT BELOW HEADER --- */
+main {
+  padding: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
